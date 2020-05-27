@@ -3,10 +3,9 @@
 <?php 
 
 class Bootstrap {
-    private $controller;
+    private $controller; 
     private $action;
     private $request;
-
 
     public function __construct($request){
         $this->request = $request;
@@ -22,6 +21,9 @@ class Bootstrap {
         }
     }
 
+
+
+// This code is for redirecting and checking of the controller passed 
 
     public function createController() {
         //Check if this controller  that is passed is a class 
@@ -49,5 +51,4 @@ class Bootstrap {
         }
     }
  }
-
 ?> 
